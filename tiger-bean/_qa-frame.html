@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QA Frame</title>
+  <style>
+    html, body { margin: 0; padding: 0; background: #fff; overflow: hidden; }
+    iframe { position: absolute; top: 0; left: 0; border: 0; display: block; background: #fff; }
+  </style>
+</head>
+<body>
+  <script>
+    var params = new URLSearchParams(location.search);
+    var page = params.get("p") || "index.html";
+    var width = parseInt(params.get("w") || "390", 10);
+    var height = parseInt(params.get("h") || "12000", 10);
+    var lang = params.get("lang") || "ar";
+    try { localStorage.setItem("tigerbean:lang", lang === "en" ? "en" : "ar"); } catch (e) {}
+    var frame = document.createElement("iframe");
+    frame.src = page;
+    frame.width = width;
+    frame.height = height;
+    frame.title = "QA preview";
+    if (params.get("menu") === "1") {
+      frame.addEventListener("load", function () {
+        var doc = frame.contentDocument;
+        var nav = doc.getElementById("primaryNav");
+        if (nav) { nav.style.transition = "none"; }
+        var toggle = doc.getElementById("navToggle");
+        if (toggle) { toggle.click(); }
+      });
+    }
+    document.body.appendChild(frame);
+  </script>
+</body>
+</html>

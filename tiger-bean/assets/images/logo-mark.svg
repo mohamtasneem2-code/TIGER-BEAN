@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="tbLogoTitle">
+  <title id="tbLogoTitle">TIGER BEAN — ناب النمر</title>
+  <defs>
+    <linearGradient id="tbGold" x1="12" y1="8" x2="84" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E7CCAA"/>
+      <stop offset=".5" stop-color="#B38A60"/>
+      <stop offset="1" stop-color="#8C6742"/>
+    </linearGradient>
+    <radialGradient id="tbGlow" cx="50%" cy="38%" r="65%">
+      <stop offset="0" stop-color="#642B39"/>
+      <stop offset=".65" stop-color="#2b1914"/>
+      <stop offset="1" stop-color="#1c100c"/>
+    </radialGradient>
+  </defs>
+  <circle cx="48" cy="48" r="46" fill="url(#tbGlow)" stroke="url(#tbGold)" stroke-width="1.4"/>
+  <circle cx="48" cy="48" r="39" fill="none" stroke="url(#tbGold)" stroke-width=".6" opacity=".45"/>
+
+  <!-- ears -->
+  <path d="M30 27 25.5 13.5 41 20" fill="none" stroke="url(#tbGold)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M66 27 70.5 13.5 55 20" fill="none" stroke="url(#tbGold)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- head -->
+  <path d="M27.5 31.5c0-8.5 9-14 20.5-14s20.5 5.5 20.5 14c0 7.5-3.2 13.2-7.6 18.2L48 63.5 35.1 49.7c-4.4-5-7.6-10.7-7.6-18.2Z" fill="none" stroke="url(#tbGold)" stroke-width="1.9" stroke-linejoin="round"/>
+
+  <!-- forehead stripes -->
+  <g fill="none" stroke="url(#tbGold)" stroke-width="1.45" stroke-linecap="round">
+    <path d="M48 18.5v13"/>
+    <path d="m40 20.5 2.6 11"/>
+    <path d="m56 20.5-2.6 11"/>
+    <path d="M33.5 38.5c2.8.6 4.8 1.5 6.6 3"/>
+    <path d="M62.5 38.5c-2.8.6-4.8 1.5-6.6 3"/>
+    <path d="M32.5 45c2.4.3 4.2.8 6 1.6"/>
+    <path d="M63.5 45c-2.4.3-4.2.8-6 1.6"/>
+  </g>
+
+  <!-- eyes -->
+  <path d="M35 34.2c2.2-2.2 5.2-2.2 7.4 0-2.2 2.3-5.2 2.3-7.4 0Z" fill="url(#tbGold)"/>
+  <path d="M53.6 34.2c2.2-2.2 5.2-2.2 7.4 0-2.2 2.3-5.2 2.3-7.4 0Z" fill="url(#tbGold)"/>
+  <circle cx="38.7" cy="34.2" r=".65" fill="#21130f"/>
+  <circle cx="57.3" cy="34.2" r=".65" fill="#21130f"/>
+
+  <!-- coffee-bean nose -->
+  <g transform="rotate(38 48 46.5)">
+    <ellipse cx="48" cy="46.5" rx="5.1" ry="3.7" fill="url(#tbGold)"/>
+    <path d="M43.4 47.1c3.1-2 5.4-1.9 8.8-.7" fill="none" stroke="#251510" stroke-width="1.05" stroke-linecap="round"/>
+  </g>
+
+  <!-- muzzle -->
+  <g fill="none" stroke="url(#tbGold)" stroke-width="1.25" stroke-linecap="round">
+    <path d="M48 50.5v4.2"/>
+    <path d="M48 54.7c-2.3 0-4.2-1.1-4.8-2.8"/>
+    <path d="M48 54.7c2.3 0 4.2-1.1 4.8-2.8"/>
+  </g>
+
+  <!-- whisker dots -->
+  <g fill="url(#tbGold)" opacity=".85">
+    <circle cx="39.5" cy="49.8" r=".7"/>
+    <circle cx="42.2" cy="51.8" r=".7"/>
+    <circle cx="56.5" cy="49.8" r=".7"/>
+    <circle cx="53.8" cy="51.8" r=".7"/>
+  </g>
+</svg>
